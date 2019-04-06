@@ -28,4 +28,23 @@ echo $daun "%"$merah" Author 	 = Billal     "$daun"%"
 echo $daun "%"$merah" Name Tools = MyTools       "$daun"%"
 echo $daun "%"$merah" Version	 = 1.0        "$daun"%"
 echo $daun "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
-figlet "C o o m i n g  S o o n"
+	echo
+	echo
+	echo
+echo $merah "[]=======================[]"
+echo $daun  "  1.Hack Facebook Target"
+echo $merah "[]=======================[]"
+echo $tai
+read -p "dr460n >>" pilih
+
+if [ $pilih = "1" ] || [ $pilih = "1" ]
+then
+clear
+pkg install python
+pkg install python2 
+pip2 install mechanize
+git clone https://github.com/Bl4ckDr460n/facebookbrute
+mv facebookbrute $HOME
+cd $HOME/facebookbrute
+python2 brute.py
+fi
