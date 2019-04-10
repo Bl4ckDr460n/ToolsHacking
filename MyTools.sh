@@ -58,11 +58,19 @@ echo $merah "[]=======================[]"
 sleep 1
 echo $daun  "  5.KKKTP Generate"
 echo $merah "[]=======================[]"
+echo
+sleep 1
+echo $merah "[]=======================[]"
+echo $daun  "  0.Install Bahan"
+echo $merah "[]=======================[]"
+sleep 1
+echo $daun  "  I.Info"
+echo $merah "[]=======================[]"
 sleep 1
 echo $daun  "  E.Exit"
 echo $merah "[]=======================[]"
 sleep 1
-echo $tai
+echo $daun
 sleep 0.9
 read -p "dr460n >>" pilih
 
@@ -117,6 +125,12 @@ cd $HOME/freekkktp
 php ktp.php
 exit
 fi
+if [ $pilih ="0" ] || [ $pilih = "0" ]
+then
+clear
+cd modul
+sh install.sh
+fi
 # Exit
 if [ $pilih = "E" ]
 then
@@ -125,3 +139,58 @@ echo $tai "Ya Udah Kalo Gak Mau Ngegunain Tools Ini"
 echo $merah "Pelit Amat Sih Jadi Orang :)"
 exit
 fi
+if [ $pilih = "I" ] || [ $pilih = "i" ]
+then
+clear
+echo $merah "[]==========================[]"
+echo $merah "[]"$daun"           INFO           "$merah"[]"
+echo $merah "[]==========================[]"
+echo $merah "[]"$daun"     TENTANG PRIBADI      "$merah"[]"
+echo $merah "[]==========================[]"
+echo $merah "[]"$daun" Author    : Bl4ck_Dr460n "$merah"[]"
+echo $merah "[]"$daun" Nama      : Billal       "$merah"[]"
+echo $merah "[]"$daun" Panggilan : Bl4ckD460n   "$merah"[]"
+echo $merah "[]"$daun" Umur      : 13 = SD      "$merah"[]"
+echo $merah "[]"$daun" No Telp   : 089xxxxxxxxx "$merah"[]"
+echo $merah "[]"$daun" Youtube   : Hacker Cilik "$merah"[]"
+echo $merah "[]==========================[]"
+echo
+echo $merah "[]==========================[]"
+echo $merah "[]"$daun"      TENTANG TOOLS       "$merah"[]"
+echo $merah "[]==========================[]"
+echo $merah "[]"$daun" Name Tools : MyTools     "$merah"[]"
+echo $merah "[]"$daun" Version    : 1.0         "$merah"[]"
+echo $merah "[]"$daun" code       : dr460n      "$merah"[]"
+echo $merah "[]==========================[] "
+echo
+echo $merah "[]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[]"
+echo $merah "[]"$daun"               MyGrup              "$merah"[]"
+echo $merah "[]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[]"
+echo $merah "[] "$tai"1.Subang Cyber Army"
+echo $merah "[] "$tai"2.-"
+echo $merah "[]XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[]"
+echo
+echo
+echo $tai"["$daun"B"$tai"/"$daun"Q"$tai"]"
+echo $biru "Pilih"
+echo $daun
+read -p "dr460n >> " back
+fi
+if [ $back = "B" ] || [ $back = "b" ]
+then
+clear
+fi
+if [ $back = "Q" ] || [ $back = "q" ]
+then
+clear
+echo $tai "Ya Udah Klo Exit"
+echo $green "BY BY........"
+exit
+fi
+
+*) clear
+echo $merah "Anda Salah Memasukan "
+sleep 1
+echo $tai "Sedang Mengembalikan Ke Awal Tools"
+echo "Tunggu Bossq 3 Detik"
+sleep 3
