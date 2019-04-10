@@ -15,6 +15,9 @@ pkg install ruby
 pkg install git
 pkg install cmatrix
 pkg install sl
+pip2 install -r dr460n.txt
 clear
 echo $ku
 figlet -f slant.flf "Done"
+echo
+echo
