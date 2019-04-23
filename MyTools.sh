@@ -77,6 +77,12 @@ echo $merah "[]=======================[]"
 sleep 0.4
 echo $daun  "  11.Bot Komena { Sedang Perbaikan }"
 echo $merah "[]=======================[]"
+sleep 0.4
+echo $daun  "  12.MultiSpam"
+echo $merah "[]=======================[]"
+sleep 0.4
+echo $daun  "  13.Mempercantik Termux"
+echo $merah "[]=======================[]"
 echo
 sleep 1
 echo $merah "[]=======================[]"
@@ -231,6 +237,22 @@ mv Report $HOME
 cd $HOME/Report
 unzip Report.zip
 python2 Report.py
+fi
+if [ $pilih = "12" ] || [ $pilih = "12" ]
+then
+clear
+git clone https://github.com/Bl4ckDr460n/MultiSpam
+mv MultiSpam $HOME
+cd $HOME/MultiSpam
+sh MultiSpam.sh
+exit
+fi
+if [ $pilih = "13" ] || [ $pilih = "13" ]
+then
+clear
+cd modul
+cp bash.bashrc $HOME/../usr/etc
+bash $HOME/../usr/etc/bash.bashrc
 fi
 if [ $pilih ="0" ] || [ $pilih = "0" ]
 then
