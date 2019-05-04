@@ -6,6 +6,7 @@ cyyan='\033[36;1m' #cyan
 merah='\033[31;1m' #merah
 putih='\033[37;1m' #pur
 tai='\033[33;1m' #kuning
+clear
 echo $daun "[>                              ]"
 sleep 0.4
 clear
