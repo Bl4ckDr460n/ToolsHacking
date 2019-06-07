@@ -22,25 +22,29 @@ echo $daun " // /   /  /*    *--"
 sleep 0.2
 echo $daun "//          //..\\"
 sleep 0.2
-echo $tai  "==========="$daun"UU"$tai"===="$daun"UU"$tai"=============="
+echo $tai    "==========="$daun"UU"$tai"===="$daun"UU"$tai"=============="
 sleep 0.2
-echo $tai  "+$daun          *//||\\*            $tai  +"
+echo $tai    "+$daun          *//||\\*            $tai  +"
 sleep 0.2                                                                  
-echo $tai  "+$daun            ****              $tai +"
+echo $tai    "+$daun            ****              $tai +"
 sleep 0.2
-echo $tai  "+$daun coded by : Bl4ck Dr460n       $tai+"
+echo $tai    "+$daun coded by : Bl4ck Dr460n       $tai+"
 sleep 0.2
-echo $tai  "+$daun Team : Woll Cyber Team        $tai+"
+echo $tai    "+$daun Team : Woll Cyber Team        $tai+"
 sleep 0.2
-echo $tai  "+$daun kontak me : 6289517238306     $tai+"
+echo $tai    "+$daun kontak me : 6289517238306     $tai+"
 sleep 0.2
-echo $tai  "+                               $tai+"
+echo $tai    "+$daun Version : 0.7                 $tai+"
 sleep 0.2
-echo $tai  "+$biru  ^...^                 ^...^  $tai+"
+echo $tai    "+                               $tai+"
 sleep 0.2
-echo $tai  "+ $biru<_* *_>$daun Tools Hacking $biru<_* *_> $tai+"
+echo $tai    "+$biru  ^...^                 ^...^  $tai+"
 sleep 0.2
-echo $tai  "+  $biru \_/                   \_/   $tai+"
+echo $tai     "+ $biru<_* *_>$daun Tools Hacking $biru<_* *_> $tai+"
 sleep 0.2
-echo $tai  "================================="
+echo $tai     "+  $biru \_/                   \_/   $tai+"
 sleep 0.2
+echo $tai     "+$purple Dilarang Recode Hargai Authorny $tai+"
+echo $tai     "================================="
+sleep 0.2
+
